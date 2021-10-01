@@ -14,7 +14,7 @@ app.get("/", function (req, res) {
 });
 
 // timestamp API
-app.get("/api/timestamp/:date?", (req, res) => {
+app.get("/api/:date?", (req, res) => { //I've changed the url because the index.html file href attribute uses api/[date]
   const givenDate = req.params.date;
   let date;
 
